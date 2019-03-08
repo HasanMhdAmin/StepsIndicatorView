@@ -28,14 +28,14 @@ public class MainActivity extends AppCompatActivity {
         viewPager.setAdapter(pagerAdapter);
 
 
-        //set spacing between indicators
-        indicator.setIndicatorSpacing(10);
-
-        //set selected indicators color
-        indicator.setSelectedColor(Color.GREEN);
-
-        //set unSelected indicators color
-        indicator.setUnSelectedColor(Color.WHITE);
+//        //set spacing between indicators
+//        indicator.setIndicatorSpacing(10);
+//
+//        //set selected indicators color
+//        indicator.setSelectedColor(Color.GREEN);
+//
+//        //set unSelected indicators color
+//        indicator.setUnSelectedColor(Color.WHITE);
 
         indicator.setupWithViewPager(viewPager);
 

@@ -2,6 +2,7 @@ package amin.mhd.hasan.stepsindicator;
 
 
 import android.content.Context;
+import android.content.res.TypedArray;
 import android.graphics.Color;
 import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
@@ -17,11 +18,11 @@ public class StepsIndicatorView extends LinearLayout {
 
     private Context context;
     private int steps;
-    private int selectedColor = Color.parseColor("#F9F871");
+    private int selectedColor = Color.CYAN;
     private int unSelectedColor = Color.GRAY;
     private int previousPage = 0;
     private ViewPager viewPager;
-    private int indicatorSpacing = 10;
+    private float indicatorSpacing = 10;
 
     public StepsIndicatorView(Context context) {
         super(context);
@@ -31,6 +32,16 @@ public class StepsIndicatorView extends LinearLayout {
     public StepsIndicatorView(Context context, AttributeSet attrs) {
         super(context, attrs);
         this.context = context;
+        TypedArray a = context.obtainStyledAttributes(attrs,
+                R.styleable.StepsIndicatorView, 0, 0);
+        try {
+            selectedColor = a.getColor(R.styleable.StepsIndicatorView_selectedColor, Color.CYAN);
+            unSelectedColor = a.getColor(R.styleable.StepsIndicatorView_unSelectedColor, Color.GRAY);
+            indicatorSpacing = a.getDimension(R.styleable.StepsIndicatorView_indicatorSpacing, indicatorSpacing);
+        } finally {
+            a.recycle();
+        }
+
 
     }
 
@@ -52,11 +63,11 @@ public class StepsIndicatorView extends LinearLayout {
         build();
     }
 
-    public int getIndicatorSpacing() {
+    public float getIndicatorSpacing() {
         return indicatorSpacing;
     }
 
-    public void setIndicatorSpacing(int indicatorSpacing) {
+    public void setIndicatorSpacing(float indicatorSpacing) {
         this.indicatorSpacing = indicatorSpacing;
         build();
     }
@@ -92,8 +103,8 @@ public class StepsIndicatorView extends LinearLayout {
                 step.setBackgroundColor(unSelectedColor);
             LayoutParams p1 = new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT);
             p1.weight = 1;
-            p1.setMarginStart(indicatorSpacing);
-            p1.setMarginEnd(indicatorSpacing);
+            p1.setMarginStart((int)indicatorSpacing);
+            p1.setMarginEnd((int)indicatorSpacing);
 
             step.setLayoutParams(p1);
             step.requestLayout();
