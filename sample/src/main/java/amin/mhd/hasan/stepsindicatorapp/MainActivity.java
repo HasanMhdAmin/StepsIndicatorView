@@ -1,5 +1,6 @@
 package amin.mhd.hasan.stepsindicatorapp;
 
+import android.graphics.Color;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -26,7 +27,19 @@ public class MainActivity extends AppCompatActivity {
         CustomPagerAdapter pagerAdapter = new CustomPagerAdapter(this, getSupportFragmentManager());
         viewPager.setAdapter(pagerAdapter);
 
+
+        //set spacing between indicators
+        indicator.setIndicatorSpacing(10);
+
+        //set selected indicators color
+        indicator.setSelectedColor(Color.GREEN);
+
+        //set unSelected indicators color
+        indicator.setUnSelectedColor(Color.WHITE);
+
         indicator.setupWithViewPager(viewPager);
+
+
 
     }
 }
