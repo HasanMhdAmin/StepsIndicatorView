@@ -1,1 +1,1 @@
-include ':app', ':stepsindicator'
+include ':sample', ':stepsindicator'
