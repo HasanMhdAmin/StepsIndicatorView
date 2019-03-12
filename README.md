@@ -22,7 +22,7 @@ allprojects {
 }
 ```
 
--  Add the dependency
+-  Add the dependency in your **app** ```build.gradle```
 ```
 dependencies {
     implementation 'com.github.HasanMhdAmin:StepsIndicatorView:v0.9.1'
