@@ -33,7 +33,7 @@ dependencies {
 - XML:
 ```xml
     <amin.mhd.hasan.stepsindicator.StepsIndicatorView
-        android:id="@+id/indicator"
+        android:id="@+id/stepsIndicatorView"
         android:layout_width="match_parent"
         android:layout_height="5dp"
         android:layout_centerHorizontal="true"
