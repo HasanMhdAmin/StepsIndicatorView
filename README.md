@@ -55,6 +55,7 @@ dependencies {
 
 ```java
 StepsIndicatorView stepsIndicator = findViewById(R.id.stepsIndicatorView);
+
 stepsIndicator.setupWithViewPager(betterViewPage);
 ```
 
@@ -70,10 +71,10 @@ stepsIndicator.setUnSelectedColor(Color.WHITE);
 ```
 
 
+## Author 
+Hasan Mhd Amin on GitHub [@HasanMhdAmin](https://github.com/HasanMhdAmin) 
 
-
-# License
-
+## License
 ```
 Copyright 2018 yuyakaido
 
