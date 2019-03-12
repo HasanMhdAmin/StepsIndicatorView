@@ -22,15 +22,15 @@ public class CustomPagerAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int i) {
         switch (i) {
             case 0:
-                return BlankFragment.newInstance("#005CD9");
+                return BlankFragment.newInstance("#7E57C2");
             case 1:
-                return BlankFragment.newInstance("#C050C6");
+                return BlankFragment.newInstance("#5C6BC0");
             case 2:
-                return BlankFragment.newInstance("#FF579B");
+                return BlankFragment.newInstance("#42A5F5");
             case 3:
-                return BlankFragment.newInstance("#FF8670");
+                return BlankFragment.newInstance("#26A69A");
             case 4:
-                return BlankFragment.newInstance("#FFC159");
+                return BlankFragment.newInstance("#D4E157");
             default:
                 return BlankFragment.newInstance("#005CD9");
         }

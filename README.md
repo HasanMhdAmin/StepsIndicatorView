@@ -3,8 +3,7 @@ steps view pager indicator
 
 
 ## Overview
-
-GIF image
+![demo](https://raw.githubusercontent.com/HasanMhdAmin/StepsIndicatorView/master/images/StepsIndicatorView.gif)
 
 ## Download
 
