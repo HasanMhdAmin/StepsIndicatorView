@@ -59,7 +59,7 @@ StepsIndicatorView stepsIndicator = findViewById(R.id.stepsIndicatorView);
 stepsIndicator.setupWithViewPager(betterViewPage);
 ```
 
-you can also set ```StepsIndicatorView``` 's attributes by code
+you can also set ```StepsIndicatorView``` 's attributes in code
 
 ```java
 //set space between indicators
