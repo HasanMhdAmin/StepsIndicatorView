@@ -75,7 +75,7 @@ Hasan Mhd Amin on GitHub [@HasanMhdAmin](https://github.com/HasanMhdAmin)
 
 ## License
 ```
-Copyright 2018 yuyakaido
+Copyright 2019 HasanMhdAmin
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
